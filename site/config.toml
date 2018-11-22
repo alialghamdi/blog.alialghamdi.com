@@ -1,4 +1,4 @@
-baseURL = "https://blog.alialghamdi.com"
+baseURL = "/"
 languageCode = "ar-sa"
 title = "مدونة علي"
 theme = "hermit"
