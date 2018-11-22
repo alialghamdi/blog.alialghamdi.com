@@ -1,9 +1,59 @@
-baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+baseURL = "https://blog.alialghamdi.com"
+languageCode = "ar-sa"
+title = "مدونة علي"
+theme = "hermit"
+# enableGitInfo = true
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+hasCJKLanguage = true  # If there're Chinese/Japanese/Korean Languages in the content, enable this.
+rssLimit = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This is only used by RSS template.
+googleAnalytics = "UA-129658276-1"
+# disqusShortname = "yourdiscussshortname"
 
-# RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
-# https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+[author]
+  name = "علي الغامدي"
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[taxonomies]
+  tag = "tags"
+  category = ""  # Categories are disabled by default.
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # themeColor = "#494f5c"  # Theme color in meta tags.
+  homeSubtitle = "مضخة كلام فاضي"
+  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  # gitUrl = "https://github.com/Someone/SomeRepo/commit/" # Prefix of link to you git commit detail page. GitInfo must be enabled. 
+  justifyContent = false  # Set "text-align: justify" to .content
+  # bgImg = ""  #  Homepage background-image URL
+
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/alialghamdi"
+
+  # [[params.social]]
+   # name = "instagram"
+   # url = "https://instagram.com/"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/alialghamdi"
+
+[menu]
+
+  [[menu.main]]
+    name = "التدوينات"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "عن علي"
+    url = "/about/"
+    weight = 20
