@@ -2,6 +2,7 @@
 @import "normalize.scss";
 @import "syntax.scss";
 @import "animate.scss";
+@import url('https://fonts.googleapis.com/css?family=Tajawal');
 
 /* Webkit Scrollbar Customize */
 ::-webkit-scrollbar {
@@ -30,7 +31,9 @@ input,
 select,
 textarea {
   color: $text;
-  font-family: $fonts;
+//  font-family: $fonts;
+	font-family: 'Tajawal', sans-serif;
+	direction: rtl;
 }
 
 pre,
@@ -185,6 +188,7 @@ table {
 //
 #site-header {
   position: fixed;
+	direction: rtl;
   z-index: 1;
   bottom: 0;
   width: 100%;
@@ -202,6 +206,7 @@ table {
   .site-branding {
     display: inline-block;
     margin-right: .8em;
+		margin-left: .8em;
     font-size: 1.2em;
   }
 
@@ -406,6 +411,7 @@ p.img-404 {
   .posts-list {
     flex-grow: 1;
     margin: 0;
+		margin-right: .8em;
     padding: 0;
     list-style: none;
 
@@ -470,7 +476,7 @@ p.img-404 {
 }
 
 hr.post-end {
-  width: 50%;
+  width: 100%;
   margin-top: 1.6em;
   margin-bottom: .8em;
   margin-left: 0;
@@ -546,7 +552,7 @@ a.footnote-return {
   }
 
   svg {
-    margin-right: .8em;
+    margin-left: .8em;
   }
 
   .tag {
@@ -585,7 +591,7 @@ a.footnote-return {
   }
 
   hr.post-end {
-    width: 40%;
+    width: 100%;
   }
 }
 
@@ -601,7 +607,7 @@ a.footnote-return {
   }
 
   hr.post-end {
-    width: 30%;
+    width: 100%;
   }
 }
 
@@ -619,7 +625,7 @@ a.footnote-return {
   }
 
   hr.post-end {
-    width: 30%;
+    width: 100%;
   }
 }
 
@@ -662,7 +668,7 @@ a.footnote-return {
   }
 
   hr.post-end {
-    width: 60%;
+    width: 100%;
   }
 
   #mobile-menu {
